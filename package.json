@@ -1,0 +1,23 @@
+{
+  "name": "secret-message-grid",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fetches a published Google Doc of (x, char, y) triples and prints the secret-message grid.",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^20.19.43",
+    "@types/node-fetch": "^2.6.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "start": "ts-node printSecretMessage.ts",
+    "e2e": "npx playwright test",
+    "report": "npx playwright show-report"
+  }
+}

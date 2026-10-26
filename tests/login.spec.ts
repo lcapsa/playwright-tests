@@ -38,7 +38,7 @@ class LoginPage {
   }
 }
 
-test.describe("Locations search", () => {
+test.describe("Login", () => {
   let loginPage: LoginPage;
 
   test.beforeEach(async ({ page }) => {
